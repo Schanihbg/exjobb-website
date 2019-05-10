@@ -1,8 +1,8 @@
 module.exports = {
   configureWebpack: {
     optimization: {
-      splitChunks: false, // Bundling
-      minimize: false     // Minification
+      // splitChunks: false, // Bundling
+      // minimize: false     // Minification
     },
     performance: {
       maxAssetSize: 5120000 // Max size of images (5 megabytes)

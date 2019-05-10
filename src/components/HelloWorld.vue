@@ -2,7 +2,7 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
 
-    <p>Here is a random number from Lodash (0-9): {{ this.lodash.random(9) }}</p>
+    <p>Here is a random number from Lodash (0-9): {{ this.lodash(9) }}</p>
     <p>50 Paragraphs of Lorem Ipsum from <a href="https://www.lipsum.com/" target="_blank" rel="noopener noreferrer">https://www.lipsum.com/</a></p>
     <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat felis urna, vitae euismod mi finibus vitae. Cras scelerisque, nisl at scelerisque tempor, odio neque tempor purus, pulvinar vehicula massa dui et odio. Vestibulum mattis id lectus semper efficitur. Donec auctor efficitur faucibus. Pellentesque a venenatis nisl, non convallis purus. In viverra pulvinar arcu et sollicitudin. Vivamus nec arcu sit amet libero lobortis faucibus vitae in ipsum. Nunc enim elit, faucibus non nisl in, faucibus auctor sapien.
@@ -114,12 +114,12 @@ Quisque consectetur porta metus, at pharetra enim tristique nec. Vestibulum eget
 </template>
 
 <script>
-import lodash from 'lodash';
+import random from 'lodash/random';
 
 export default {
   data() {
     return {
-      lodash: lodash
+      lodash: random
     }
   },
   name: 'HelloWorld',
